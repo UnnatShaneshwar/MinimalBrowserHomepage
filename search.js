@@ -1,4 +1,5 @@
 const searchInput = document.querySelector("#search");
+searchInput.focus();
 const search = () => {
   const searchQuery = searchInput.value;
   location.href = `https://google.com/search?q=${searchQuery}`;
