@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New tab</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <span class="overlay hidden"></span>
+    <div class="add-site-popup hidden">
+      <input
+        type="text"
+        class="site-name"
+        required
+        placeholder="Name"
+        autofocus
+      />
+      <input type="url" class="site-url" required placeholder="URL" />
+      <div>
+        <button class="cancel" onclick="removeAddSitePopup()">Cancel</button>
+        <button class="submit" onclick="addSite()">Submit</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="search">
+        <input type="text" id="search" placeholder="Search..." />
+      </div>
+      <div class="time"></div>
+
+      <div class="topsites">
+        <div
+          class="add-site"
+          accesskey="e"
+          onclick="showAddSitePopup()"
+          title="Keyboard shortcut: Alt+Shift+e"
+        >
+          <span>+ Add site</span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./search.js"></script>
+  <script src="./time.js"></script>
+  <script src="./topsites.js"></script>
+</html>
