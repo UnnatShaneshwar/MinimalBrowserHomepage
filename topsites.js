@@ -68,12 +68,3 @@ const removeAddSitePopup = () => {
   overlay.classList.add("hidden");
   clearSiteInput();
 };
-
-//// Shortcut key to add site
-// document.addEventListener("keypress", (e) => {
-//   if (popup.classList.contains("hidden")) {
-//     if (e.key === "e") {
-//       showAddSitePopup();
-//     }
-//   }
-// });
